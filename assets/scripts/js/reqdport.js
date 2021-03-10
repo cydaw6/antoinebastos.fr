@@ -40,7 +40,7 @@ let donnees = function db(){
         "link": "https://github.com/cydaw6/Osteo",
         "thumbnail": "imm.png",
         "team": ["Antoine Bastos", "<a href='http://timotheelefebvre.works/'> Timothée Lefebvre </a>"],
-        "img": ["/Immersailles/imm1.png","/Immersailles/imm2.png","/Immersailles/imm1.png","/Immersailles/imm3.png","/Immersailles/imm4.png"]
+        "img": ["Immersailles/imm1.png","Immersailles/imm2.png","Immersailles/imm1.png","Immersailles/imm3.png","Immersailles/imm4.png"]
       },
     {
         "_id": 87945224,
@@ -59,7 +59,7 @@ let donnees = function db(){
         "link": "https://cydaw6.github.io/radius/",
         "github": "https://github.com/cydaw6/radius",
         "thumbnail": "radd.PNG",
-        "img": ["/radius/rad1.png","/radius/rad2.png","/radius/radius1.png","/radius/radius2.png"]
+        "img": ["radius/rad1.png","radius/rad2.png","radius/radius1.png","radius/radius2.png"]
 },
        {
         "_id": 168854,
@@ -77,7 +77,7 @@ let donnees = function db(){
                 "date": "Mars à Mai 2020 ",
                 "link": "https://github.com/cydaw6/Osteo",
                 "thumbnail": "hover/ostehover.jpg",
-                "img": ["/osteo/osteoa2.png","/osteo/osteoaccueil.png","/osteo/osteoani.png"]
+                "img": ["osteo/osteoa2.png","osteo/osteoaccueil.png","osteo/osteoani.png"]
         }
         ,
         {
@@ -95,7 +95,7 @@ let donnees = function db(){
                 "link": "https://kernelts2.wixsite.com/deadkernel",
                 "github": "https://github.com/cydaw6/Dead-Kernel",
                 "thumbnail": "dead.png",
-                "img": ["/dead/1.jpg","/dead/2.jpg", "/dead/3.jpg"]
+                "img": ["dead/1.jpg","dead/2.jpg", "dead/3.jpg"]
         }
         ,
         {
@@ -113,7 +113,7 @@ let donnees = function db(){
                 "github": "https://github.com/cydaw6/Little-Tropico",
                 "thumbnail": "trop1.png",
                 "team": ["Antoine Bastos", "<a href='http://timotheelefebvre.works/'> Timothée Lefebvre </a>"],
-                "img": ["/littletropico/trp1.png","/littletropico/trp2.png"]
+                "img": ["littletropico/trp1.png","littletropico/trp2.png"]
         }
         ,
         {
@@ -129,7 +129,7 @@ let donnees = function db(){
                 "title": "MCN Canal du Midi",
                 "date": "Octobre 2020 à  Janvier 2021",
                 "link": "http://cdm.timotheelefebvre.works/",
-                "thumbnail": "/hover/fondmcn2.png"
+                "thumbnail": "hover/fondmcn2.png"
         }
         ,
         {
@@ -147,7 +147,7 @@ let donnees = function db(){
                 "github": "https://github.com/cydaw6/Boulder-Dash",
                 "thumbnail": "bould1.png",
                 "team": ["Antoine Bastos", "<a href='http://timotheelefebvre.works/'> Timothée Lefebvre </a>"],
-                "img": ["/boulder/1h.png","/boulder/1l.png", "/boulder/boulderdash.png"]
+                "img": ["boulder/1h.png","boulder/1l.png", "boulder/boulderdash.png"]
                 
         }
 
