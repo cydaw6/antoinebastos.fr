@@ -1,0 +1,220 @@
+
+/*-------------------------*/
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  
+  z-index: 3;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 4; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 3;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 20%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+    left: -215px;
+    width: 297px;
+    margin: -101px 0 0 -149%;
+    
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+  transform: translate(-1000%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  margin-bottom: 1em;
+  text-align: center;  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  margin-top: 2px;
+}
+
+.topnav a {
+  display: block;
+  color: inherit;
+  text-align: left;
+  padding: 7px 1.9em;
+  text-decoration: none;
+  font-size: 0.8em;
+  transition: 0.3s  ease-in-out;
+}
+
+.topnav a:hover {
+  background-color: transparent;
+  color: rgb(196, 51, 25);
+  transition: 0.1s  linear;
+}
+
+.topnav a.active {
+  color:  rgb(196, 51, 25);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+#menuToggle{
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  /*a:not(:first-child)*/
+  .topnav a {display: none;}
+  .reseaux{display: none;}
+  #global-box {
+    margin-top:0px;
+    /*transition-duration: 1s;*/
+}
+  .topnav a.icon {
+    width: 5em;
+    float: right;
+    display: block;
+
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition-duration: 1s;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: none;
+    
+    text-align: left;
+  } 
+  
+  #menuToggle{
+    display: block;
+  }
+ 
+}
+
+
