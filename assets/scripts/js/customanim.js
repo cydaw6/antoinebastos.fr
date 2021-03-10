@@ -261,21 +261,28 @@ function callProjectCanva(card, onlyobj = false){
   let proj;
   if(!onlyobj){
     proj = returnDatafromId(card.getAttribute("data-value"));
+    
+  
   }else{
     proj = card;
   }
 
+ 
+  if(proj.title){
+    $("#project-title").html(proj.title);
+  }
   
-  $("#project-title").html(proj.title);
+  $("#date-p").html("");
   if(proj.date){
     $("#date-p").html('<span class="title-info"> Date  : </span><span class="text-info" style="color:'+rgbListToString(getColorForCurrentMode())+'";>'+ proj.date+'</span>');
   }
+  
+  $("#apropos").html("");
   if(proj.description){
     $("#apropos").html('<span class="title-info"> A propos  : </span><span class="text-info" style="color:'+rgbListToString(getColorForCurrentMode())+'";>'+ proj.description+'</span>')
   }
   $("#team").html('');
   if(proj.team){
-    
     $("#team").html('<span class="title-info"> Equipe  : </span><span class="text-info" style="color:'+rgbListToString(getColorForCurrentMode())+'";>'+ proj.team.join(", ")+'</span>');
   }
 
@@ -304,6 +311,7 @@ function callProjectCanva(card, onlyobj = false){
   changeColorMode();changeColorMode();
 
   //projet img gallery
+  $("#projimggallery").html('');
   if(proj.img){
     if(proj.img.length){
       let nbcolumn = proj.img.length;
