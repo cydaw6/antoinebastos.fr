@@ -189,7 +189,7 @@ $(document).ready(function(){
             }
            
             str += '<div class="car" onclick="callProjectCanva(this);" data-value="'+ p._id +'">'
-            + '<a href="#"><img src="/assets/img/'+ p.thumbnail +'" style="width:100%;border-radius: 4px;"></a>'
+            + '<a href="#"><img src="https://cydaw6.github.io/antoinebastos.fr/assets/img/'+ p.thumbnail +'" style="width:100%;border-radius: 4px;"></a>'
             + '<div class="thumb-info">'
             + '<div class="thumbnail-title">'+p.title+'</div>'
             + '<div class="tags">'+ tags +' </div>'

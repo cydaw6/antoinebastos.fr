@@ -323,7 +323,7 @@ function callProjectCanva(card, onlyobj = false){
       for (let index = 0; index < proj.img.length; index++) {
         let calc = index%nbcolumn;
         let currcol = document.getElementById('projimgc'+calc);
-        currcol.innerHTML += '<img src="/assets/img/'+proj.img[index]+'" id="pimggal'+(index)+'" style="width:100%">';
+        currcol.innerHTML += '<img src="https://cydaw6.github.io/antoinebastos.fr/assets/img/'+proj.img[index]+'" id="pimggal'+(index)+'" style="width:100%">';
         let currimg = document.getElementById('pimggal'+(index)+"");
         currimg.onclick = function(){
           modal.style.display = "block";
