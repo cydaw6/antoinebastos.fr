@@ -37,7 +37,8 @@ let donnees = function db(){
         "description": "Le projet «Immersailles» vise à rendre accessible en ligne l' identification historico-spatialisée des personnages d'Ancien Régime sur les plans d'époque du Château de Versailles . Chaque personnage recevra également une fiche descriptive afin de permettre aux utilisateurs d'en savoir plus sur ces anciens locataires.",
         "title": "Immersailles",
         "date": "Septembre 2020 à Janvier 2021",
-        "link": "https://github.com/cydaw6/Osteo",
+        "github": "https://github.com/cydaw6/immersailles",
+        "link": "https://chateauversailles-recherche.fr/francais/recherche/projets-scientifiques-et-recherche-appliquee/projet-fressin-2019-2022",
         "thumbnail": "imm.png",
         "team": ["Antoine Bastos", "<a href='http://timotheelefebvre.works/'> Timothée Lefebvre </a>"],
         "img": ["Immersailles/imm1.png","Immersailles/imm2.png","Immersailles/imm1.png","Immersailles/imm3.png","Immersailles/imm4.png"]
@@ -129,7 +130,8 @@ let donnees = function db(){
                 "title": "MCN Canal du Midi",
                 "date": "Octobre 2020 à  Janvier 2021",
                 "link": "http://cdm.timotheelefebvre.works/",
-                "thumbnail": "hover/fondmcn2.png"
+                "thumbnail": "hover/fondmcn2.png",
+                "img": ["canal/canal1.png", "canal/canal2.png", "canal/canal3.png", "canal/canal4.png"]
         }
         ,
         {
